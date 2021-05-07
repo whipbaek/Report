@@ -1,0 +1,38 @@
+1. 기본 사전 지식
+
+커밋(Commit) : 파일을 추가,변경 내용을 "저장소"에 저장하는 작업, 메시지를 남긴다.
+푸시(Push) : 파일을 추가하거나 변경 내용을 "원격 저장소"에 업로드하는 작업
+브랜치(branch) : 유지보수를 위해 기능을 추가 및 변경시를 대비하여 흐름의 분기를 만드는 작업
+
+2. cmd 사용법
+
+드라이브 교체법 :  c: , d: 식으로 뒤에 콜론을 붙여준다.
+폴더 이동법 : "cd 폴더명" / 상위 폴더로 이동시 : "cd .."
+한번에 이동시 : cd 폴더명\폴더명\폴더명
+
+3.원하는 디렉토리에가서 
+  (1) git clone 원격저장소 주소 를 입력.
+  (2) 그러면 그 디렉토리에 repository 프로젝트 파일이 생긴다.
+  (3) 그곳에서 원하는 파일 생성후에 git status를 해주고 빨간색일시 
+       git add를 해준다. (git add* : 전체파일 add / git add 해당파일 : 해당파일 add)
+
+  (4) 다시 git status 확인후 초록색으로 변경이 됐다면 커밋할 수 있는 상태가 된 것이다.
+  (5) git commit -m "커밋메시지" 로 커밋을 해준다.
+/*
+  (6) 로컬 저장소와 원격저장소를 연결한다. git remote add origin 자기주소 / git remote -v (연결 확인)
+ ->이 부분은 커밋이 된다면 이미 되어있다는 뜻 
+*/  
+(7) git push로 commit된 내용을 올린다.
+
+
+//////////////////////////////////
+
+*git bash로 이용할시
+
+1. git init후에 git remote add origin 자기주소 를 해준다.
+2. 이후에 add 후에 commit메시지 , 그리고 push를 해준다.
+3. git push -u origin master 
+ ([rejected] master -> master (fetch first) 일시에는 git pull origin master로 파일을 가져와 동기화(?) 먼저한다.)
+  [rejected] master -> master (non-fast-forward) 일시에는 git push origin +master 명령어를 사용한다.
+
+4. 
