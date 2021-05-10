@@ -1,2 +1,3 @@
-﻿  Matrix.cpp
+﻿  Streetlight.cpp
+C:\Users\white\source\repos\Report\knu report\Streetlight.cpp(81): warning C4715: 'turnoff': 모든 제어 경로에서 값을 반환하지는 않습니다.
   knu report.vcxproj -> C:\Users\white\source\repos\Report\Debug\knu report.exe
